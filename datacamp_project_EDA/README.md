@@ -1,6 +1,6 @@
 **📊 DataCamp Project: Exploring Netflix Movies from the 1990s**
 
-This project was completed via (https://www.datacamp.com/datalab/w/d017a8c0-eab8-4933-b1f0-8c728b0e8e61/edit)
+This project link : https://www.datacamp.com/datalab/w/6a4269d7-44fa-474c-aaa2-43e9f606327c/edit
 
 
 This project focuses on exploratory data analysis (EDA) of a Netflix dataset to uncover trends and patterns in movies from the 1990s decade.
