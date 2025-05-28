@@ -1,0 +1,57 @@
+
+
+🏆 Nobel Prize Data Analysis
+This project analyzes the Nobel Prize winners dataset to uncover key trends and answer thought-provoking questions about gender, nationality, and achievements of Nobel laureates throughout history.
+https://www.datacamp.com/datalab/w/b8b709d5-8dc3-4dd5-b388-6b5af3b44383/edit
+
+
+📊 Project Overview
+Using Python and pandas, this project dives into the Nobel Prize dataset to:
+
+Explore trends by gender, birth country, decade, and prize category
+
+Identify patterns such as:
+
+Who received the first Nobel Prize among women
+
+Repeat winners of the Nobel Prize
+
+Decade and category combinations with highest female representation
+
+Top gender and birth country among laureates
+
+Decades where the USA had the highest representation
+
+🧠 Questions Answered
+Most common gender and birth country among Nobel laureates
+
+Variables: top_gender, top_country
+
+Decade with the highest ratio of US-born winners to total winners
+
+Variable: max_decade_usa
+
+Decade and category with the highest proportion of female winners
+
+Variable: max_female_dict (dictionary format: {decade: category})
+
+First woman to win a Nobel Prize and the category
+
+Variables: first_woman_name, first_woman_category
+
+Individuals or organizations who won the Nobel Prize more than once
+
+List of names in: repeat_list
+
+📁 Dataset
+The dataset nobel.csv was sourced from the Nobel Prize API.
+
+It includes information such as full name, year, gender, birth country, and category.
+
+🛠 Tools Used
+Python 3
+
+pandas
+
+Jupyter Notebook
+
