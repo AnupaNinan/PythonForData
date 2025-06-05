@@ -1,0 +1,47 @@
+https://www.datacamp.com/datalab/w/2b2cc735-324f-4790-82b1-4cb8ed9acd53/edit
+
+# 📊 LAPD Crime Analysis
+
+Welcome to the **LAPD Crime Analysis Project**!  
+This project explores crime data from Los Angeles, California — the City of Angels — and answers critical questions to help law enforcement understand patterns and allocate resources more effectively.
+
+---
+
+## 🕵️‍♂️ Project Overview
+
+Los Angeles, known for its glitz and glamour, is also home to one of the largest police departments in the country. With a growing population and vibrant urban life, understanding crime trends is vital for public safety.
+
+In this project, we analyze real-world LAPD crime data to:
+
+- Identify peak crime hours.
+- Determine the most crime-prone areas at night.
+- Study victim demographics by age group.
+
+
+## 🧪 Analysis Questions
+
+1. **Which hour has the highest frequency of crimes?**  
+   _→ Stored as `peak_crime_hour` (int)_
+
+2. **Which area has the most crimes between 10PM and 3:59AM?**  
+   _→ Stored as `peak_night_crime_location` (str)_
+
+3. **What is the number of crimes against different age groups?**  
+   _→ Stored as `victim_ages` (pandas Series) with groups:_
+   - `"0-17"`
+   - `"18-25"`
+   - `"26-34"`
+   - `"35-44"`
+   - `"45-54"`
+   - `"55-64"`
+   - `"65+"`
+
+---
+
+## 🔧 Technologies Used
+
+- **Python 3**
+- **Pandas** for data manipulation
+- **NumPy** for numerical operations
+- **Matplotlib** / **Seaborn** for data visualization (optional extensions)
+
