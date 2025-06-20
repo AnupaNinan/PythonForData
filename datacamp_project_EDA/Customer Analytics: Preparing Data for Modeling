@@ -1,0 +1,73 @@
+
+
+# 🧠 Customer Analytics: Preparing Data for Modeling
+
+View the project here : https://www.datacamp.com/datalab/w/f51fa0f1-dc28-4d22-8329-1be7f6c8f247/edit
+
+## Overview
+
+This project is part of a data engineering and modeling initiative for **Training Data Ltd.**, a major online data science training provider. The goal is to clean and optimize a large dataset of anonymized student information to prepare it for predictive modeling—specifically, predicting whether students are seeking new job opportunities.
+
+Working with a subset of the company’s full dataset (`customer_train.csv`), this proof-of-concept demonstrates how to **reduce memory usage** while preserving data integrity for downstream modeling.
+
+---
+
+## 📁 Dataset Description
+
+The dataset contains 14 columns with anonymized information about students, including demographics, education, job experience, and job-seeking status.
+
+| Column | Description |
+|--------|-------------|
+| `student_id` | Unique ID for each student |
+| `city` | Encoded city name |
+| `city_development_index` | Scaled development index for the city |
+| `gender` | Gender of the student |
+| `relevant_experience` | Indicates if student has relevant experience |
+| `enrolled_university` | Type of university course (if any) |
+| `education_level` | Highest education level attained |
+| `major_discipline` | Student’s academic discipline |
+| `experience` | Total years of experience |
+| `company_size` | Number of employees at student’s company |
+| `company_type` | Type of company employing the student |
+| `last_new_job` | Time since the last job change |
+| `training_hours` | Number of hours of training completed |
+| `job_change` | Whether the student is seeking a job change (0/1) |
+
+---
+
+## ✅ Objective
+
+Create a new DataFrame called `ds_jobs_transformed` that:
+
+- Stores the data in a more **memory-efficient** format
+- Maintains **data fidelity** and logical ordering of categories
+- Filters to include only students with:
+  - **10 or more years of experience**
+  - **Employment at companies with 1000+ employees**
+
+---
+
+## ⚙️ Data Transformation Rules
+
+| Condition | Transformation |
+|----------|----------------|
+| Columns with 2 unique values | Convert to `bool` |
+| Integer columns | Convert to `int32` |
+| Float columns | Convert to `float16` |
+| Nominal categorical data | Convert to `category` dtype |
+| Ordinal categorical data | Use `pd.CategoricalDtype(..., ordered=True)` |
+
+
+## 📉 Before vs. After (Memory Usage)
+
+Using `.info()` and `.memory_usage(deep=True)`, the new DataFrame shows a **substantial reduction in memory footprint**, making it suitable for large-scale machine learning workflows.
+
+---
+
+## 🧪 Filtering for Modeling
+
+To support targeted recruitment, the dataset is filtered for students who:
+- Have **≥ 10 years** of experience
+- Work in **companies with ≥ 1000 employees**
+
+
